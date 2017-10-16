@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import { ScrollView, Image, View, Text } from 'react-native';
+import { Actions as NavigationActions } from 'react-native-router-flux'
 
 // Styles
 import styles from './Styles/HomeStyle';
@@ -21,7 +22,7 @@ export default class Home extends React.Component {
         <View style={styles.appBar}>
           <Text style={styles.titleStyle}> Home </Text>
         </View>
-        
+
         <View style={styles.welcome}>
           <Text style={styles.welcomeText}>Welcome to the</Text>
           <Text style={styles.welcomeText}>React-Native Boilerplate!</Text>

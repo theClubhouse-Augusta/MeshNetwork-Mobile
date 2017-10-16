@@ -1,18 +1,16 @@
-import React, { Component } from 'react';
-import { View } from 'react-native';
-import { NativeRouter, Route } from 'react-router-native';
+import React, { Component } from 'react'
+import { Scene, Router, Stack } from 'react-native-router-flux'
 
-import Home from '../Containers/Home';
-
+import Home from '../Containers/Home'
 
 class NavigationRouter extends Component {
   render() {
     return(
-      <NativeRouter>
-        <View>
-          <Route initial path='/' component={Home} />
-        </View>
-      </NativeRouter>
+      <Router>
+        <Stack key="root">
+          <Scene initial key='home' component={Home} title='Home' hideNavBar={true}/>
+        </Stack>
+      </Router>
     )
   }
 }
