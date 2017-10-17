@@ -15,6 +15,22 @@ export default class Home extends React.Component {
     };
   };
 
+  componentWillMount() {
+    this.getSkills();
+  }
+
+  getSkills = () => {
+    fetch('http://192.168.0.12:8000/api/skills', {
+      method:'GET',
+    })
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(json) {
+      console.warn(json);
+    })
+  }
+
   render () {
 
     return (

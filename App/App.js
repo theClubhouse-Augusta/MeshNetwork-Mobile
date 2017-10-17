@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { View, StatusBar } from 'react-native';
 import NavigationRouter from './Navigation/NavigationRouter'
+import { Root } from "native-base";
 
 import OneSignal from 'react-native-onesignal';
 
@@ -12,10 +12,9 @@ class App extends Component {
 
   render() {
     return(
-      <View>
-        <StatusBar backgroundColor="#ffbe39" barStyle="dark-content" />
+      <Root>
         <NavigationRouter/>
-      </View>
+      </Root>
     )
   }
 
