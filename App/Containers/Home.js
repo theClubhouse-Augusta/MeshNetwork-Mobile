@@ -20,7 +20,7 @@ export default class Home extends React.Component {
   }
 
   getSkills = () => {
-    fetch('http://192.168.0.12:8000/api/skills', {
+    fetch('http://192.168.3.176:8000/api/skills', {
       method:'GET',
     })
     .then(function(response) {

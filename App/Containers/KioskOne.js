@@ -30,7 +30,7 @@ export default class KioskOne extends React.Component {
         </Header>
       </View>   
 
-      <View> 
+      <View styles={styles.searchBody> 
         <View style={styles.topHalf}> 
           <View style={styles.nameResults}> 
             { /* autocomplete area */ }

@@ -4,7 +4,7 @@ import KioskOne from '../Containers/KioskOne';
 import KioskTwo from '../Containers/KioskTwo'; 
 
 
-import Home from '../Containers/Home'
+import Root from '../Containers/Root'
 
 class NavigationRouter extends Component {
   render() {
@@ -14,6 +14,7 @@ class NavigationRouter extends Component {
           <Scene initial key='home' component={Home} title='Home' hideNavBar={true}/>
           <Scene key='kioskOne' component={KioskOne} title='kioskOne' hideNavBar={true}/>
           <Scene key='kioskTwo' component={KioskTwo} title='kioskTwo' hideNavBar={true}/>         
+          <Scene key='root' component={Root} title='Root' hideNavBar={true}/>
         </Stack>
       </Router>
     )
