@@ -1,7 +1,7 @@
 // @flow
 
 import React, { Component } from 'react';
-import { ScrollView, Image, View, Text } from 'react-native';
+import { ScrollView, Image, View, Text, Button } from 'react-native';
 import { Actions as NavigationActions } from 'react-native-router-flux'
 
 // Styles
@@ -40,9 +40,9 @@ export default class Home extends React.Component {
         </View>
 
         <View style={styles.welcome}>
-          <Text style={styles.welcomeText}>Welcome to the</Text>
-          <Text style={styles.welcomeText}>React-Native Boilerplate!</Text>
-          <Text>Created By: Technopathic</Text>
+          <Button title='KioskOne' onPress={NavigationActions.kioskOne} />
+          <Button title='KioskTwo' onPress={NavigationActions.kioskTwo} />
+          
         </View>
 
       </ScrollView>
