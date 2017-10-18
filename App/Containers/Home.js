@@ -3,6 +3,7 @@
 import React, { Component } from 'react';
 import { ScrollView, Image, View, Text } from 'react-native';
 import { Actions as NavigationActions } from 'react-native-router-flux'
+import { Container } from 'native-base';
 
 // Styles
 import styles from './Styles/HomeStyle';
@@ -34,7 +35,7 @@ export default class Home extends React.Component {
   render () {
 
     return (
-      <ScrollView style={styles.container}>
+      <Container>
         <View style={styles.appBar}>
           <Text style={styles.titleStyle}> Home </Text>
         </View>
@@ -45,7 +46,7 @@ export default class Home extends React.Component {
           <Text>Created By: Technopathic</Text>
         </View>
 
-      </ScrollView>
+      </Container>
     )
   }
 }
