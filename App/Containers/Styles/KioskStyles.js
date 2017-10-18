@@ -23,29 +23,53 @@ export default StyleSheet.create({
             textAlign: 'center',
         },
         
-        suggestedEvents: {
-            marginBottom: 20, 
+
+
+
+suggestedEvents: {
+    marginBottom: 20, 
+}, 
+
+          
+    
+    welcomeMsg: { 
+        borderColor: 'red', 
+        borderWidth: 1, 
+        marginBottom: 10,
+        marginLeft: 10, 
+        marginRight: 10, 
+        height: 150, 
+    },
+
+    reasonSelect: { 
+        margin: 10,
+        height: 400, 
+     
+        borderColor: 'blue', 
+        borderWidth: 1,  
+    },
+
+    contentCard: { 
+        borderRadius: 2,
+        borderColor: "#DDDDDD",
+        shadowColor: "#000",
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 1.5,
+        elevation: 3, 
+        flex: 1,  
+        margin: 25,
+    }, 
+        
+
+        cardTitle: {
+            alignSelf: 'center',  
         }, 
 
-            cardContainer: {
-            margin: 15,
-            backgroundColor: 'transparent', 
-            },
-    
-    searchBody: { 
-        borderColor: 'green', 
-        borderWidth: 1,  margin: 10, 
-            },
-    reasonSelect: { 
-        borderColor: 'blue', 
-        borderWidth: 1, margin: 10,
-    },
-    
-    topHalf: { 
-        borderColor: 'red', 
-        borderWidth: 1, margin: 10,
-    },
-
+        cardBody: { 
+            justifyContent: 'center',
+            alignItems: 'center'
+        }, 
     
             
 

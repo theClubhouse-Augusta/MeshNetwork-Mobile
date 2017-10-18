@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ScrollView, Image, View, Text } from 'react-native';
 import { Actions as NavigationActions } from 'react-native-router-flux'; 
-import { Header, Item, Input, Icon, Button, Card, CardItem, Body, List, ListItem, H2 } from 'native-base';
+import { Header, Item, Input, Icon, Button, Card, CardItem, Body, List, ListItem, H2, H3 } from 'native-base';
 
 // Styles
 import styles from './Styles/KioskStyles';
@@ -30,39 +30,36 @@ export default class KioskOne extends React.Component {
         </Header>
       </View>   
 
-      <View styles={styles.searchBody> 
-        <View style={styles.topHalf}> 
-          <View style={styles.nameResults}> 
+        <ScrollView style={styles.topHalf}> 
+          <View style={styles.searchResults}> 
             { /* autocomplete area */ }
           </View>
 
           <View style={styles.welcomeMsg}> 
             <H2> A Welcome</H2>
           </View>
-        </View>
+        </ScrollView>
 
         
 
-        <View style={styles.reasonSelect}> 
-        
-          <List dataArray={reasons}
+        <View style={styles.reasonSelect}>         
+          <List style={styles.cardContainer}  dataArray={reasons}
           renderRow={(reason) => 
-            <ListItem style={styles.cardContainer}>
-              <Card>
-                <CardItem>
-                  <Body>
+            <ListItem style={styles.contentCard} > 
+                <View > 
+                  
+                  <Body style={styles.cardBody}>
+                    
                     <Text>
-                      {reason}
+                    
+                    <H3 style={styles.cardTitle}> {reason} </H3>
                     </Text>
                   </Body>
-                </CardItem>
-              </Card>
+                </View> 
             </ListItem>
           }> 
           </List>          
         </View>
-      </View>
-
       </ScrollView>
     )
   }

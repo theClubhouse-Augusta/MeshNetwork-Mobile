@@ -12,7 +12,7 @@ export default class KioskTwo extends React.Component {
   };
 
   render () {
-    var items = ['strawberry', 'banana', 'durian' ]; 
+    var items = ['strawberry', 'banana', 'durian', 'orange' ]; 
 
     return (
       <ScrollView style={styles.container}>

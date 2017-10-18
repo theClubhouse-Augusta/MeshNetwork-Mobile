@@ -10,11 +10,10 @@ class NavigationRouter extends Component {
   render() {
     return(
       <Router>
-        <Stack key="root">
-          <Scene initial key='home' component={Home} title='Home' hideNavBar={true}/>
+        <Stack key="root">      
           <Scene key='kioskOne' component={KioskOne} title='kioskOne' hideNavBar={true}/>
           <Scene key='kioskTwo' component={KioskTwo} title='kioskTwo' hideNavBar={true}/>         
-          <Scene key='root' component={Root} title='Root' hideNavBar={true}/>
+          <Scene initial key='root' component={Root} title='Root' hideNavBar={true}/>
         </Stack>
       </Router>
     )
