@@ -18,19 +18,31 @@ export default StyleSheet.create({
         },
       
         eventsTitle: {
-            margin: 15, 
             alignContent: 'center', 
             textAlign: 'center',
+            margin: 25,
         },
         
 
 
 
 suggestedEvents: {
-    marginBottom: 20, 
 }, 
 
-          
+exitKiosk: {
+    marginBottom: 0,
+    marginTop: 25,     
+},        
+
+kioskTwoInstruct: {
+    color: '#EEEEEE',
+    backgroundColor: '#263238',
+    padding: 20,
+    height: 100,
+    marginBottom: 5,
+    fontSize: 20,
+    textAlign: 'center', 
+},
     
     welcomeMsg: { 
         borderColor: 'red', 
@@ -43,10 +55,8 @@ suggestedEvents: {
 
     reasonSelect: { 
         margin: 10,
-        height: 400, 
-     
-        borderColor: 'blue', 
-        borderWidth: 1,  
+        height: 400,     
+       
     },
 
     contentCard: { 
@@ -59,16 +69,20 @@ suggestedEvents: {
         elevation: 3, 
         flex: 1,  
         margin: 25,
+        height: 75,
     }, 
         
 
         cardTitle: {
-            alignSelf: 'center',  
+            justifyContent: 'center',
+            alignItems: 'center',
+            textAlign: 'center',  
         }, 
 
         cardBody: { 
             justifyContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
+            
         }, 
     
             

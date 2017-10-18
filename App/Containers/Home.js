@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import { ScrollView, Image, View, Text, Button } from 'react-native';
-import { Actions as NavigationActions } from 'react-native-router-flux'
+import { Actions as NavigationActions } from 'react-native-router-flux'; 
 import { Container } from 'native-base';
 
 // Styles

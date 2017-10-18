@@ -36,7 +36,7 @@ export default class KioskOne extends React.Component {
           </View>
 
           <View style={styles.welcomeMsg}> 
-            <H2> A Welcome</H2>
+           { /* <H2> A Welcome</H2> */ } 
           </View>
         </ScrollView>
 
@@ -45,14 +45,13 @@ export default class KioskOne extends React.Component {
         <View style={styles.reasonSelect}>         
           <List style={styles.cardContainer}  dataArray={reasons}
           renderRow={(reason) => 
-            <ListItem style={styles.contentCard} > 
-                <View > 
-                  
-                  <Body style={styles.cardBody}>
-                    
-                    <Text>
-                    
-                    <H3 style={styles.cardTitle}> {reason} </H3>
+            <ListItem style={styles.contentCard}> 
+                <View> 
+                  <Body style={styles.cardBody} >       
+                                        
+                      <H3 style={styles.cardTitle}> {reason} </H3>
+                      
+                      <Text>
                     </Text>
                   </Body>
                 </View> 
