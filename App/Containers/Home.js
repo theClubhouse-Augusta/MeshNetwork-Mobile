@@ -43,6 +43,7 @@ export default class Home extends React.Component {
         <View style={styles.welcome}>
           <Button title='KioskOne' onPress={NavigationActions.kioskOne} />
           <Button title='KioskTwo' onPress={NavigationActions.kioskTwo} />
+          <Button title='EventDetail' onPress={NavigationActions.eventDetail} />
           
         </View>
 
