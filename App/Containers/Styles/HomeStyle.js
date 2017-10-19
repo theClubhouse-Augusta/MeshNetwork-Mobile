@@ -28,11 +28,11 @@ export default StyleSheet.create({
   },
 
   welcome: {
-    flex:1,
+    flex:2,
     minHeight:Dimensions.get('window').height / 2,
     flexDirection:'column',
     alignItems:'center',
-    justifyContent:'center'
+    justifyContent: 'space-around', 
   },
 
   welcomeText: {
