@@ -9,8 +9,8 @@ import { Container } from 'native-base';
 import styles from './Styles/HomeStyle';
 
 export default class Home extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
 
     };
@@ -43,7 +43,8 @@ export default class Home extends React.Component {
         <View style={styles.welcome}>
           <Button title='KioskOne' onPress={NavigationActions.kioskOne} />
           <Button title='KioskTwo' onPress={NavigationActions.kioskTwo} />
-          
+          <Button title='search' onPress={NavigationActions.search} />
+          <Button title='searchusers' onPress={NavigationActions.searchusers} />
         </View>
 
       </Container>
