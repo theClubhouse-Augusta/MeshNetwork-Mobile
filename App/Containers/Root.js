@@ -1,19 +1,20 @@
 // @flow
 
-import React, { Component } from 'react'
-import { View, StatusBar, Text, AsyncStorage } from 'react-native'
+import React, { Component } from 'react';
+import { View, StatusBar, Text, AsyncStorage } from 'react-native';
 import { Container, Header, Content, Footer, FooterTab, Button, Icon } from 'native-base';
-import { Actions as NavigationActions } from 'react-native-router-flux'
+import { Actions as NavigationActions } from 'react-native-router-flux';
 
-import Home from './Home'
-import Profile from './Profile'
-import Search from './Search'
-import Events from './Events'
-import Spaces from './Spaces'
+import Home from './Home';
+import Profile from './Profile';
+import Search from './Search';
+import SearchUsers from './SearchUsers';
+import Events from './Events';
+import Spaces from './Spaces';
 
 class Root extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
 
     this.state = {
       selectedIndex:0,
@@ -52,25 +53,26 @@ class Root extends Component {
     else if(this.state.selectedIndex === 1)
     {
       return(
-        <Profile uid={this.state.user.user.id}/>
+        <Search/>
       )
     }
     else if(this.state.selectedIndex === 2)
     {
       return(
-        <Search/>
+        <SearchUsers />
       )
     }
     else if(this.state.selectedIndex === 3)
     {
       return(
-        <Spaces/>
+        <Events/>
       )
     }
     else if(this.state.selectedIndex === 4)
     {
       return(
-        <Events/>
+
+        <Profile />
       )
     }
   };

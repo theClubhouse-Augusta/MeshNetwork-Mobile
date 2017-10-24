@@ -16,21 +16,21 @@ export default class Home extends React.Component {
     };
   };
 
-  componentWillMount() {
-    this.getSkills();
-  }
+  // componentWillMount() {
+  //   this.getSkills();
+  // }
 
-  getSkills = () => {
-    fetch('http://192.168.3.176:8000/api/skills', {
-      method:'GET',
-    })
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(json) {
-      console.warn(json);
-    })
-  }
+  // getSkills = () => {
+  //   fetch('http://192.168.3.176:8000/api/skills', {
+  //     method:'GET',
+  //   })
+  //   .then(function(response) {
+  //     return response.json();
+  //   })
+  //   .then(function(json) {
+  //     console.warn(json);
+  //   })
+  // }
 
   render () {
 
@@ -46,7 +46,12 @@ export default class Home extends React.Component {
           <Button title='EventDetail' onPress={NavigationActions.eventDetail} />
           <Button title='AddEvent' onPress={NavigationActions.addEvent} />
           <Button title='search' onPress={NavigationActions.search} />
+<<<<<<< HEAD
           <Button title='searchUsers' onPress={NavigationActions.searchUsers} />
+=======
+          <Button title='searchusers' onPress={NavigationActions.searchusers} />
+          <Button title='profile' onPress={NavigationActions.profile} />
+>>>>>>> fdaf3a07dc0912b8d0d572c3082bc7ada7a09374
         </View>
 
       </Container>

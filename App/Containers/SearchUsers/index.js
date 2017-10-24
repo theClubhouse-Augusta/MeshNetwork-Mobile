@@ -7,13 +7,16 @@ import {
   TextInput 
 } from "react-native";
 
-import { Item, Icon, Button, } from 'native-base';
+import { Item, Icon, Button, Input } from 'native-base';
 // components
 import PreSearch from './PreSearch';
 import SkillList from './Skill';
 import ResultsList from './Results';
 // styles
-import styles from './Styles/UserSearchStyle';
+import styles from './Style';
+
+const viewPort = Dimensions.get('window').height - 60;
+const width = Dimensions.get('window').width;
 
 class SearchUsers extends Component {
   constructor() {
@@ -28,71 +31,71 @@ class SearchUsers extends Component {
           id: 1,
           name: 'dude', 
           email: 'dude@mail.com',
-          avatar: require('./Images/dude.jpg'),
+          avatar: require('../Images/dude.jpg'),
           business: 'vandalay industries'
         },
         {
           id: 2,
           name: 'dudette', 
           email: 'dudette@mail.com',
-          avatar: require('./Images/dude2.jpg'),
+          avatar: require('../Images/dude2.jpg'),
           company: 'vandalay industries'
         },
         {
           id: 3,
           name: 'sue', 
           email: 'sue@mail.com',
-          avatar: require('./Images/dude3.jpg'),
+          avatar: require('../Images/dude3.jpg'),
           company: 'vandalay industries'
         },
         {
           id: 4,
           name: 'four', 
           email: 'four@mail.com',
-          avatar: require('./Images/dude.jpg'),
+          avatar: require('../Images/dude.jpg'),
           company: 'vandalay industries'
         },
         {
           id: 5,
           name: 'five', 
           email: 'five@mail.com',
-          avatar: require('./Images/dude5.jpg'),
+          avatar: require('../Images/dude5.jpg'),
           company: 'vandalay industries'
         },
         {
           id: 6,
           name: 'six', 
           email: 'six@mail.com',
-          avatar: require('./Images/dude6.jpg'),
+          avatar: require('../Images/dude6.jpg'),
           company: 'vandalay industries'
         },
         {
           id: 7,
           name: 'seven', 
           email: 'seven@mail.com',
-          avatar: require('./Images/seven.jpg'),
+          avatar: require('../Images/seven.jpg'),
           company: 'vandalay industries'
         },
         {
           id: 8,
           name: 'eight', 
           email: 'eight@mail.com',
-          avatar: require('./Images/seven.jpg'),
-          company: require('./Images/eight.jpg'),
+          avatar: require('../Images/seven.jpg'),
+          company: require('../Images/eight.jpg'),
         },
         {
           id: 9,
           name: 'nine', 
           email: 'nine@mail.com',
-          avatar: require('./Images/seven.jpg'),
-          company: require('./Images/nine.jpg'),
+          avatar: require('../Images/seven.jpg'),
+          company: require('../Images/nine.jpg'),
         },
         {
           id: 10,
           name: 'ten', 
           email: 'ten@mail.com',
-          avatar: require('./Images/seven.jpg'),
-          company: require('./Images/ten.jpg'),
+          avatar: require('../Images/seven.jpg'),
+          company: require('../Images/ten.jpg'),
         },
       ],
         skills: [
@@ -129,6 +132,13 @@ class SearchUsers extends Component {
   }
 
   render() {
+
+  const SearchStyle = {
+    borderTopWidth: 1, 
+    borderColor: '#fff', 
+    backgroundColor: 'white',
+    marginBottom: viewPort * .01,
+  };
     // Skill tags
     const Tags = this.state.skills.length !== 0 
       ? <SkillList skills={this.state.skills} submit={this.submitTag} />
@@ -143,7 +153,15 @@ class SearchUsers extends Component {
       <ScrollView style={styles.SearchBody}>
 
         {/* Search input header */}
-        <View style={styles.searchHeader}>
+          <View style={SearchStyle}>
+            <Item>
+              <Icon name='search' />
+              <Input placeholder='Find a space in your state!'/>
+              <Icon name="ios-people" />
+            </Item>
+          </View>
+
+        {/*<View style={styles.searchHeader}>
 
           <Item>
             <Icon name="ios-search" />
@@ -163,7 +181,7 @@ class SearchUsers extends Component {
             <Text>Search</Text>
           </Button>
 
-        </View>
+        </View>*/}
 
         {/* Content Container */}
         <View style={styles.searchContent}>
