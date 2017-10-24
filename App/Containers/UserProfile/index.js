@@ -16,7 +16,7 @@ import styles from './Style';
 const width = Dimensions.get('window').width;
 const viewPort = Dimensions.get('window').height - 60;
 
-class Profile extends Component {
+class UserProfile extends Component {
   constructor() {
     super();
     this.state = {
@@ -177,7 +177,7 @@ class Profile extends Component {
     )
   }
 }
-export default Profile;
+export default UserProfile;
 
 const  SkillList = (props) => {
   // styles  

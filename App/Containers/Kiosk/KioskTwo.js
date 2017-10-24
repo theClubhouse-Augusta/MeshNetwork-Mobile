@@ -4,7 +4,7 @@ import { Actions as NavigationActions } from 'react-native-router-flux';
 import { Card, CardItem, Body, List, ListItem, Toast, H1, H2, H3 } from 'native-base';
 
 // Styles
-import styles from './Styles/KioskStyles';
+import styles from './KioskStyles';
 
 export default class KioskTwo extends React.Component {
   constructor(props) {

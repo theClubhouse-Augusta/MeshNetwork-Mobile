@@ -1,37 +1,33 @@
 import React, { Component } from 'react'
 import { Scene, Router, Stack } from 'react-native-router-flux'
-import KioskOne from '../Containers/KioskOne'; 
-import KioskTwo from '../Containers/KioskTwo'; 
-<<<<<<< HEAD
-import SearchUsers from '../Containers/SearchUsers';
-import Search from '../Containers/Search';
-import Profile from '../Containers/Profile';
+import KioskOne from '../Containers/Kiosk/KioskOne'; 
+import KioskTwo from '../Containers/Kiosk/KioskTwo'; 
+
+import Events from '../Containers/Events'; 
+import EventDetail from '../Containers/Events/EventDetail'; 
+import AddEvent from '../Containers/Events/AddEvent'; 
+
+
+import UserSearch from '../Containers/UserSearch';
+import UserProfile from '../Containers/UserProfile';
+
 import Root from '../Containers/Root';
-=======
-import EventDetail from '../Containers/EventDetail';
 
-
-import Root from '../Containers/Root'
->>>>>>> 350673ec221c55e19d105d0ec82df614bdc33f5b
 
 class NavigationRouter extends Component {
   render() {
     return (
       <Router>
         <Stack key="root">      
-<<<<<<< HEAD
           <Scene initial key='root' component={Root} title='Root' hideNavBar={true} />
+
           <Scene key='kioskOne' component={KioskOne} title='kioskOne' hideNavBar={true} />
           <Scene key='kioskTwo' component={KioskTwo} title='kioskTwo' hideNavBar={true} />         
-          <Scene key='searchusers' component={SearchUsers} title='searchusers' hideNavBar={true} />
-          <Scene key='search' component={Search} title='search' hideNavBar={true} />
-          <Scene key='profile' component={Profile} title='profile' hideNavBar={true} />
-=======
-          <Scene key='kioskOne' component={KioskOne} title='kioskOne' hideNavBar={true}/>
-          <Scene key='kioskTwo' component={KioskTwo} title='kioskTwo' hideNavBar={true}/>  
-          <Scene key='eventDetail' component={EventDetail} title='eventDetail' hideNavBar={true}/>        
-          <Scene initial key='root' component={Root} title='Root' hideNavBar={true}/>
->>>>>>> 350673ec221c55e19d105d0ec82df614bdc33f5b
+
+          <Scene key='addEvent' component={AddEvent} title='addEvent' hideNavBar={true} />
+          <Scene key='eventDetail' component={EventDetail} title='eventDetail' hideNavBar={true} />         
+          <Scene key='userSearch' component={UserSearch} title='userSearch' hideNavBar={true} />
+          <Scene key='userProfile' component={UserProfile} title='userProfile' hideNavBar={true} />
         </Stack>
       </Router>
     );

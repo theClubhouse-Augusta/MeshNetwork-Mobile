@@ -6,7 +6,7 @@ import AutocompleteExample from './Autocomplete';
 
 
 // Styles
-import styles from './Styles/KioskStyles';
+import styles from './KioskStyles';
 
 export default class KioskOne extends React.Component {
   constructor(props) {

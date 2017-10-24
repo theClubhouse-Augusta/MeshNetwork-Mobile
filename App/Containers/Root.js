@@ -6,9 +6,9 @@ import { Container, Header, Content, Footer, FooterTab, Button, Icon } from 'nat
 import { Actions as NavigationActions } from 'react-native-router-flux';
 
 import Home from './Home';
-import Profile from './Profile';
-import Search from './Search';
-import SearchUsers from './SearchUsers';
+import UserProfile from './UserProfile';
+
+import UserSearch from './UserSearch';
 import Events from './Events';
 import Spaces from './Spaces';
 
@@ -53,26 +53,19 @@ class Root extends Component {
     else if(this.state.selectedIndex === 1)
     {
       return(
-        <Search/>
+        <UserSearch/>
       )
     }
     else if(this.state.selectedIndex === 2)
     {
       return(
-        <SearchUsers />
+        <UserProfile />
       )
     }
     else if(this.state.selectedIndex === 3)
     {
       return(
         <Events/>
-      )
-    }
-    else if(this.state.selectedIndex === 4)
-    {
-      return(
-
-        <Profile />
       )
     }
   };
