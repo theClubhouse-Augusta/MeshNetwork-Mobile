@@ -5,7 +5,7 @@ import { ScrollView, Image, View, Text, Button } from 'react-native';
 import { Actions as NavigationActions } from 'react-native-router-flux'
 import { Content, Toast, Left, H3 } from 'native-base'
 
-import styles from './Styles/EventStyle';
+import styles from './EventStyle';
 
 export default class EventDetail extends React.Component {
 
@@ -14,7 +14,7 @@ export default class EventDetail extends React.Component {
 
     return (
       <ScrollView>
-          <Image style={styles.eventImage} source={require('./Images/placeholder.jpg')}>
+          <Image style={styles.eventImage} source={require('../Images/placeholder.jpg')}>
             <View> 
             <Text style={styles.eventName}>PyNight</Text>
             </View>
@@ -61,7 +61,7 @@ export default class EventDetail extends React.Component {
           <View style={styles.eventOrganizers}> 
             <Text style={styles.organizerHeader}>  Organizers </Text>
             <View style={styles.userCard}>             
-                <Image style={styles.userAvatar} source={require('./Images/coolCat.jpg')}/>             
+                <Image style={styles.userAvatar} source={require('../Images/coolCat.jpg')}/>             
             </View>
 
           </View>
@@ -70,7 +70,7 @@ export default class EventDetail extends React.Component {
           <View style={styles.eventAttendees}> 
           <Text style={styles.attendeesHeader}>  Attending </Text>
             <View style={styles.userCard}>             
-                <Image style={styles.userAvatar} source={require('./Images/smilely.jpg')}/>             
+                <Image style={styles.userAvatar} source={require('../Images/smilely.jpg')}/>             
             </View>
           </View>
 
@@ -81,7 +81,7 @@ export default class EventDetail extends React.Component {
             <Text style={styles.eventAddress}> 
               540 Telfair St., Augusta, GA 30901
             </Text>
-            <Image source={require('./Images/map.png')} />
+            <Image source={require('../Images/map.png')} />
           </View>
 
        </ScrollView>

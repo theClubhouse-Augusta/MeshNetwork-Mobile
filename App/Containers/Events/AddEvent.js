@@ -4,9 +4,9 @@ import React, { Component } from 'react';
 import { ScrollView, Image, View, Text, Button, TextInput } from 'react-native';
 import { Actions as NavigationActions } from 'react-native-router-flux'
 import { H2, Content, Item, Input, Icon, Toast } from 'native-base'; 
-import DateTimePickerTester from './DateTimePicker'; 
+import DateTimePickerTester from '../DateTimePicker'; 
 
-import styles from './Styles/EventStyle';
+import styles from './EventStyle';
 
 export default class AddEvent extends React.Component {
 

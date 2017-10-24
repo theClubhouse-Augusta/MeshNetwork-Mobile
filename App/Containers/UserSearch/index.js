@@ -18,7 +18,7 @@ import styles from './Style';
 const viewPort = Dimensions.get('window').height - 60;
 const width = Dimensions.get('window').width;
 
-class SearchUsers extends Component {
+class UserSearch extends Component {
   constructor() {
     super();
     this.state = {
@@ -198,4 +198,4 @@ class SearchUsers extends Component {
     );
   }
 }
-export default SearchUsers;
+export default UserSearch;
