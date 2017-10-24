@@ -6,7 +6,7 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Dimensions } from 'react-native';
 // styles
-import styles from './Styles/UserSearchStyle';
+import styles from './Style';
 
 const  SkillList = (props) => {
 

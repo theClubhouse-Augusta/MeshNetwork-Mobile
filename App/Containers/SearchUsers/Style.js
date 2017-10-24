@@ -10,6 +10,7 @@ export default StyleSheet.create({
      */ 
     SearchBody: {
       flex: 1,
+      backgroundColor: 'white', 
     },
 
     searchHeader: {
@@ -17,7 +18,7 @@ export default StyleSheet.create({
       marginBottom: 10,
       height: viewPort * .07,
       //background
-      backgroundColor: '#fff', 
+      backgroundColor: 'white', 
     },
 
     searchTextInput: {
@@ -67,7 +68,8 @@ export default StyleSheet.create({
     paddingLeft: 10,
     paddingTop: 10,
     // background
-    backgroundColor: '#EEE',
+    // backgroundColor: '#EEE',
+    // backgroundColor: 'smokewhite',
     // border
     borderWidth: 1,
     borderStyle: 'solid',

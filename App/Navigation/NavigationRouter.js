@@ -2,22 +2,25 @@ import React, { Component } from 'react'
 import { Scene, Router, Stack } from 'react-native-router-flux'
 import KioskOne from '../Containers/KioskOne'; 
 import KioskTwo from '../Containers/KioskTwo'; 
-
-
-import Root from '../Containers/Root'
+import SearchUsers from '../Containers/SearchUsers';
+import Search from '../Containers/Search';
+import Profile from '../Containers/Profile';
+import Root from '../Containers/Root';
 
 class NavigationRouter extends Component {
   render() {
-    return(
+    return (
       <Router>
         <Stack key="root">      
-          <Scene key='kioskOne' component={KioskOne} title='kioskOne' hideNavBar={true}/>
-          <Scene key='kioskTwo' component={KioskTwo} title='kioskTwo' hideNavBar={true}/>         
-          <Scene initial key='root' component={Root} title='Root' hideNavBar={true}/>
+          <Scene initial key='root' component={Root} title='Root' hideNavBar={true} />
+          <Scene key='kioskOne' component={KioskOne} title='kioskOne' hideNavBar={true} />
+          <Scene key='kioskTwo' component={KioskTwo} title='kioskTwo' hideNavBar={true} />         
+          <Scene key='searchusers' component={SearchUsers} title='searchusers' hideNavBar={true} />
+          <Scene key='search' component={Search} title='search' hideNavBar={true} />
+          <Scene key='profile' component={Profile} title='profile' hideNavBar={true} />
         </Stack>
       </Router>
-    )
+    );
   }
 }
-
-export default NavigationRouter
+export default NavigationRouter;

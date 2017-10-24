@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text,  Dimensions, Image } from "react-native";
 // styles
-import styles from './Styles/UserSearchStyle';
+import styles from './Style';
 
 const PreSearch = () =>
   <View style={styles.preSearchContainer}>
@@ -14,7 +14,7 @@ const PreSearch = () =>
 
       <View style={styles.preSearchImageContainer}>
         <Image 
-          source={require('./Images/connect.jpg')} 
+          source={require('../Images/conn7.jpg')} 
           style={styles.preSearchImage} 
         />
       </View>

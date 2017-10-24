@@ -16,21 +16,21 @@ export default class Home extends React.Component {
     };
   };
 
-  componentWillMount() {
-    this.getSkills();
-  }
+  // componentWillMount() {
+  //   this.getSkills();
+  // }
 
-  getSkills = () => {
-    fetch('http://192.168.3.176:8000/api/skills', {
-      method:'GET',
-    })
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(json) {
-      console.warn(json);
-    })
-  }
+  // getSkills = () => {
+  //   fetch('http://192.168.3.176:8000/api/skills', {
+  //     method:'GET',
+  //   })
+  //   .then(function(response) {
+  //     return response.json();
+  //   })
+  //   .then(function(json) {
+  //     console.warn(json);
+  //   })
+  // }
 
   render () {
 
@@ -45,6 +45,7 @@ export default class Home extends React.Component {
           <Button title='KioskTwo' onPress={NavigationActions.kioskTwo} />
           <Button title='search' onPress={NavigationActions.search} />
           <Button title='searchusers' onPress={NavigationActions.searchusers} />
+          <Button title='profile' onPress={NavigationActions.profile} />
         </View>
 
       </Container>

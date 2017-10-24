@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 
 import { Icon, Left, Right } from 'native-base';
-import styles from './Styles/UserSearchStyle';
+import styles from './Style';
 
 const ResultsList = (props) => {
   const Results = props.results.map(result =>
