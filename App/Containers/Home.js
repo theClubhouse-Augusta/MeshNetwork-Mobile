@@ -46,7 +46,7 @@ export default class Home extends React.Component {
           <Button title='EventDetail' onPress={NavigationActions.eventDetail} />
           <Button title='AddEvent' onPress={NavigationActions.addEvent} />
           <Button title='search' onPress={NavigationActions.search} />
-          <Button title='searchusers' onPress={NavigationActions.searchusers} />
+          <Button title='searchUsers' onPress={NavigationActions.searchUsers} />
         </View>
 
       </Container>
