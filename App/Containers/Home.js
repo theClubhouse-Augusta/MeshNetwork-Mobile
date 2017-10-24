@@ -44,7 +44,7 @@ export default class Home extends React.Component {
           <Button title='KioskOne' onPress={NavigationActions.kioskOne} />
           <Button title='KioskTwo' onPress={NavigationActions.kioskTwo} />
           <Button title='EventDetail' onPress={NavigationActions.eventDetail} />
-          
+          <Button title='AddEvent' onPress={NavigationActions.addEvent} />
         </View>
 
       </Container>
