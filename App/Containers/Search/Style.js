@@ -14,6 +14,7 @@ export default StyleSheet.create({
     width: width,
   },
 
+  // search
   SearchStyle: {
     marginTop: 3, 
     borderTopWidth:1, 
@@ -48,6 +49,7 @@ export default StyleSheet.create({
 
   resultImage: {
     // formatting
+    marginTop: viewPort * .005,
     width: 50, 
     height: 50, 
     // border

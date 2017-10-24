@@ -9,12 +9,12 @@ import {
 } from 'react-native';
 
 import { Icon, Left, Right } from 'native-base';
-import styles from './Styles/SpaceSearchStyle';
+import styles from './Style';
 
 const ResultsList = (props) => {
   const Results = props.results.map(result =>
     <SpaceCard 
-      key={`result${result.id}`} 
+      key={`spaceresult${result.id}`} 
       avatar={result.avatar} 
       company={result.company} 
       name={result.name} 
@@ -22,7 +22,7 @@ const ResultsList = (props) => {
   );
 
   return (
-    <ScrollView>
+    <ScrollView style={{backgroundColor: 'white'}}>
       <Text style={styles.resultsListHeaderText}>
         Results
       </Text>
