@@ -1,6 +1,7 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
 const viewPort = Dimensions.get('window').height - 30;
+const width = Dimensions.get('window').width;
 
 export default StyleSheet.create({
         
@@ -55,7 +56,8 @@ kioskTwoInstruct: {
 
     reasonSelect: { 
         margin: 10,
-        height: 400,     
+        height: 400, 
+            
        
     },
 
@@ -74,15 +76,18 @@ kioskTwoInstruct: {
         
 
         cardTitle: {
+            flex:1,
+            flexDirection:'column',
             justifyContent: 'center',
             alignItems: 'center',
             textAlign: 'center',  
         }, 
 
         cardBody: { 
+            display: 'flex', 
+            flexDirection: 'row', 
             justifyContent: 'center',
             alignItems: 'center',
-            
         }, 
     
             
